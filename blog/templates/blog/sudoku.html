@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md">
+            {% for row in rows  %}
+                <div class="row">
+                    {% for i in row %}
+                        <div class="col-md border-right border-bottom">
+                            {{ i }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+{% endblock content %}
